@@ -23,6 +23,14 @@
                     <div class="card-body">
                         <div class="col"><p class="card-title">Tout les note du devoir du 1<sup>er</sup> trimestre</p>
                         </div>
+                        <div class="mb-2">
+                            <select id="class" onchange="classFunc(event)" name="class_id" class="form-select">
+                                <option value="">Classe ~</option>
+                                @foreach($classes as $class)
+                                    <option value="{{ $class->id }}">{{ $class->name }}</option>
+                                @endforeach
+                            </select>
+                        </div>
                         <div class="row mb-2">
                             <form id="test-form">
                                 <input id="id" type="hidden" name="id" value="">
@@ -56,14 +64,7 @@
                             </form>
                         </div>
 
-                        <div>
-                            <select id="class" onchange="classFunc(event)" name="class_id" class="form-select">
-                                <option value="">Classe ~</option>
-                                @foreach($classes as $class)
-                                    <option value="{{ $class->id }}">{{ $class->name }}</option>
-                                @endforeach
-                            </select>
-                        </div>
+
 
                         <hr>
                         <div style="border: 1px solid black; padding: 3px">

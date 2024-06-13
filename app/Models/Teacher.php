@@ -9,10 +9,10 @@ class Teacher extends Model
 {
     use HasFactory;
 
-    public function classes()
-    {
-        return $this->belongsToMany(Classes::class, 'class_teachers')->withTimestamps();
-    }
+//    public function classes()
+//    {
+//        return $this->belongsToMany(Classes::class, 'class_teachers', 'teacher_id', 'class_id')->withTimestamps();
+//    }
     public function subjects()
     {
         return $this->belongsToMany(Subjects::class, 'teacher_subjects')

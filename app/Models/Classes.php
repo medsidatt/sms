@@ -33,9 +33,9 @@ class Classes extends Model
             ->withPivot('coefficient')
             ->withTimestamps();
     }
-    public function teachers()
-    {
-        return $this->belongsToMany(Teacher::class, 'class_teachers')->withTimestamps();
-    }
+//    public function teachers()
+//    {
+//        return $this->belongsToMany(Teacher::class, 'class_teachers', 'teacher_id', 'class_id')->withTimestamps();
+//    }
 
 }

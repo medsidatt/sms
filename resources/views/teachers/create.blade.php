@@ -58,7 +58,7 @@
                                     <div>
                                         <div class="mb-4 d-flex justify-content-center">
                                             <img id="selectedImage"
-                                                 src="{{ asset('assets/img/image-placeholder.png') }}"
+                                                 src="{{ asset('storage/images/t_placeholder.png') }}"
                                                  alt="Selectioner une image" style="width: 300px;"/>
                                         </div>
 

@@ -24,7 +24,7 @@
                         <div class="row mt-2">
                             <div class="col-md-auto">
                                 <img class="image"
-                                     src="{{ asset($teacher->img_path? 'storage/' .  $teacher->img_path : 'storage/images/t_placeholder.jpeg') }}"
+                                     src="{{ asset($teacher->img_path ? 'storage/' . $teacher->img_path : ($teacher->sex == 'M' ? 'storage/images/tm-placeholder.png' : 'storage/images/tf-placeholder.png')) }}"
                                      style="width: 300px">
                             </div>
                             <div class="col-md-auto">

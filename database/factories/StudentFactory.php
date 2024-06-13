@@ -23,7 +23,7 @@ class StudentFactory extends Factory
             'last_name' => $this->faker->name(),
             'rim' => $this->faker->randomNumber(7),
             'class' => 1,
-            'sex' => 'M',
+            'sex' => $this->faker->randomElement(['F', 'M']),
             'date_of_birth' => '2010-12-12',
             'created_at' => now(),
             'updated_at' => now(),

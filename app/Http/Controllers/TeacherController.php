@@ -35,7 +35,7 @@ class TeacherController extends Controller
 
     public function view($id)
     {
-        $teacher = Teacher::with('classes', 'subjects')
+        $teacher = Teacher::with( 'subjects')
             ->where('id', $id)->first();
         if ($teacher == null) {
             return redirect('notfound');

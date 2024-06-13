@@ -96,7 +96,7 @@
                             const imagePath = image ? `storage/${image}` : 'storage/images/t_placeholder.jpeg';
                             return `
                                         <div class="ratio ratio-1x1 rounded-circle overflow-hidden">
-                                            <img src="{{ asset('${imagePath}') }}" alt="Raeesh">
+                                            <img src="{{ asset('${imagePath}') }}" alt="Professeur">
                                         </div>
                                     `;
                         }
